@@ -1,6 +1,18 @@
 <!doctype html>
 <html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script>
+		$(document).ready(function(){
+		  $("#takemeback").click(function(){
+			$(document).scrollTop(0);
+		  });
+			/*$(window).scroll(function() {
+				if($(document).scrollTop() > 500)
+				{
+					$(document).scrollTop(0);
+				}
+			});*/
+		});
 	</script>
 	<style>
 		html, body {
@@ -12,13 +24,13 @@
 		}
 		.main_bg {
 			background-color: #FED766;
-			position:absolute;
+			//position:absolute;
 			height: 100vh;
 			width: 100vw;
 			
 			animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   			animation-duration: 1s; /* don't forget to set a duration! */
-			z-index: -1;
+			z-index: -5;
 		}
 		h1 {
 			font-family: 'BioRhyme', serif;
@@ -38,7 +50,8 @@
 			position: absolute;
 			left: 5vw;
 			top: 5vw;
-			
+			z-index: 2;
+			//display: none;
 			//box-shadow: 25px 25px 0px 0px #2AB7CA;
 		}
 		.intro_text {
@@ -85,25 +98,31 @@
 			animation: bounce; /* referring directly to the animation's @keyframe declaration */
   			animation-duration: 2s;
 		}
-		footer {
+		#intro_text2 {
 			font-family: 'DM Serif Display', serif;
 		}
-		.footertext, #homepage {
+		.footertext {
 			text-align: left;
 			position: absolute;
-			top:45vh;
-			left:25vw;
-			z-index: -1;
+			z-index: 1;
+			left:25vw;		
 			font-family: 'BioRhyme', serif;
 			font-size: 455px;
 			user-select: none;
 			opacity: 5%;
 			animation-name: bigtextmove;
   			animation-duration: 1.2s;
+			
 		}
 		@keyframes bigtextmove {
 			from {left:0vw;opacity:0%;}
 			to {left:25vw;opacity:5%;}
+		}
+		#takemeback {
+			position: absolute;
+			left:50vw;
+			user-select: none;
+			cursor: pointer;
 		}
 	</style>
 <head>
@@ -133,20 +152,20 @@
 		<iframe id="video" width="1120" height="630" src="https://www.youtube.com/embed/gPShak6N_S8?si=XUUiif1BQNZz75ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 	<div class="main_bg">
+		<div class="footertext" id="homepage">home</div>
+		<div id="intro_text2"><a href="mailto:cuchulahn@gmail.com">cuchulahn@gmail.com</a></div>
 	</div>
   </div>
 </section>
 <section class="brands-section">
-  <div id="brands">
 	<div class="main_bg">
+		<p>hi hi hi</p>
+		<button>Click to fade out boxes</button>
+		<div class="footertext" id="brands">brands</div>
+		<h2 id="takemeback">⬆️</h2>
 	</div>
-  </div>
 </section>
 <footer>
-	<div class="footertext" id="homepage">Home</div>
-	<div id="intro_text2">
-		<a href="mailto:cuchulahn@gmail.com">cuchulahn@gmail.com</a>
-	</div>
 </footer>
 </body>
 </html>
