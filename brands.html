@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<style>
+		html, body {
+			margin: 0;
+			background-color: #F4F4F8;
+			width: 100vw;
+			overflow: hidden;
+		}
+		#main_bg {
+			//background-image: url("../../../Downloads/artem-stoliar-blddTLN-OOk-unsplash.jpg");
+			background-color: #FED766;
+			position:absolute;
+			height: 100vh;
+			width: 100vw;
+			
+			animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  			animation-duration: 1s; /* don't forget to set a duration! */
+			z-index: -1;
+		}
+		h1 {
+			font-family: 'BioRhyme', serif;
+			font-size: 74px;
+			position: absolute;
+			left: 791px;
+			top: 173px;
+			
+			animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  			animation-duration: 2s; /* don't forget to set a duration! */
+		}
+		#title {
+			font-size: 72px;
+			font-weight: normal;
+		}
+		#video_container {
+			position: absolute;
+			left: 5vw;
+			top: 5vw;
+			
+			//box-shadow: 25px 25px 0px 0px #2AB7CA;
+		}
+		.intro_text {
+			position: absolute;
+			top: 15vh;
+			width: 400px;
+			left: 70vw;
+		}
+		#intro_text2 {
+			position: absolute;
+			text-align: right;
+			left: 75vw;
+			top: 75vh;
+		}
+		a:hover {
+			color: black;
+		}
+		p, a {
+			font-size: 36px;
+		}
+		a {
+			color: #F4F4F8;
+		}
+		ul
+		{
+			position: absolute;
+			//display: block;
+			z-index: 2;
+			list-style-type: none;
+		}
+		li a, .navitem {
+			color: #000000;
+			font-family: 'DM Serif Display', serif;
+			font-size: 32px;
+			padding-right: 32px;
+			//background-color: #E6E6EA;
+		}
+		li a:hover, .navitem:hover {
+			width:1005px;
+			//background-color: #2AB7CA;
+			color: #FE4A49;
+			animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  			animation-duration: 2s;
+		}
+		footer {
+			font-family: 'DM Serif Display', serif;
+		}
+		.footertext, #homepage {
+			text-align: left;
+			position: absolute;
+			top:45vh;
+			left:25vw;
+			z-index: -1;
+			font-family: 'DM Serif Display', serif;
+			font-size: 455px;
+			user-select: none;
+			opacity: 5%;
+			animation-name: bigtextmove;
+  			animation-duration: 1.2s;
+		}
+		@keyframes bigtextmove {
+			from {left:0vw;opacity:0%;}
+			to {left:25vw;opacity:5%;}
+		}
+		.imgcontainer {
+			opacity: 55%;
+			width: 200px;
+			height: 200px;
+			transform: scale(100%);
+			transition: all .2s ease-in-out;
+		}
+		.imgcontainer:hover {
+			transform: scale(1.5);
+			opacity:100%;
+		}
+		#imggrid {
+			margin-left: 5%;
+			margin-top: 5%;
+		}
+	</style>
+<head>
+	
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&family=Crimson+Text:ital@1&family=DM+Serif+Display&family=Kalnia&display=swap" rel="stylesheet">
+	
+<title>Untitled Document</title>
+</head>
+
+<body>
+<header>
+	<ul>
+		<a class="navitem" href="#">Brands</a>
+		<a class="navitem" href="#">Rigging</a>
+		<a class="navitem" href="#">Sprouts</a>
+		<a class="navitem" href="#">About</a>
+	</ul>
+</header>
+<section class="main-section">
+  <div id="main"> 
+	<div id="main_bg">
+		<div id="imggrid">
+			<div class="imgcontainer">
+				<img src="../../../Downloads/giphy (1).gif" alt="" width="200" height="200" align="middle"/>
+			</div>
+			<div class="imgcontainer">
+				<img src="../../../Downloads/giphy (2).gif" alt="" width="200" height="200" align="middle"/>
+			</div>
+			<div class="imgcontainer">
+				<img src="../../../Downloads/giphy (1).gif" alt="" width="200" height="200" align="middle"/>
+			</div>
+		</div>
+	</div>
+  </div>
+</section>
+<footer>
+	<div class="footertext" id="homepage">Brands</div>
+	<div id="intro_text2">
+		<a href="mailto:cuchulahn@gmail.com">cuchulahn@gmail.com</a>
+	</div>
+</footer>
+</body>
+</html>

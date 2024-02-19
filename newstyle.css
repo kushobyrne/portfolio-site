@@ -16,27 +16,44 @@ html, body {
 	justify-content: center;
 	width:100%;
 	height: auto;
+	font-family: 'DM Serif Display', serif;
 }
 .main_bg {
 	z-index: -5;
+	padding: 5px;
 }
 .gifs-section {
 }
+#desc {
+	background-color: #F4F4F8;
+	transform: scaleY(0);
+	transition: .65s ease-out;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+#desc.animate {
+	transform: scaleY(1);
+	height: 100%;
+}
 h3 {
-	font-family: 'BioRhyme', serif;
-	
 	margin: auto;
 	text-align: center;
 	width: 50%;
 	opacity: .3;
 	padding: 10px;
 }
-h1 {
-	font-family: 'BioRhyme', serif;
+h2 {
+	margin: auto;
 	text-align: center;
-	width: 50%;
-	opacity: 1;
+	width: 100%;
 	padding: 10px;
+	//background-color: white;
+}
+h1 {
+	text-align: center;
+	//width: 50%;
+	opacity: 1;
+	//padding: 10px;
 	text-decoration-line: underline;
 }
 #d {
@@ -45,22 +62,22 @@ h1 {
 }
 p {
 	font-size: 18px;
-	font-family: 'DM Serif Display', serif;
 }
-#video_container {
+.video_container {
 	margin-top: 25px;
+	margin-bottom: 25px;
 }
 #email {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	z-index: 5;
-	font-family: 'DM Serif Display', serif;
 }
 a:hover {
-	color: black;
+	color: #F4F4F8;
+	
 }
 a {
-	color: #F4F4F8;
+	color: black;
 	font-size: 24px;
 }
 #takemeback {
@@ -71,15 +88,14 @@ a {
 img:hover {
 	transform: scale(1.2, 1.2);
 }
-img:hover > .overlaytext{
-	visibility: visible;
-}
 #footer {
 }
-#video {
+.video {
 	width: 75%;
 }
 .home-section {
 	overflow: hidden;
 }
-
+img {
+	height: 255px;
+}

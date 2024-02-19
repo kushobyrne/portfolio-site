@@ -1,21 +1,23 @@
+var openTrigger = false;
+var hasOpened = false;
+
 $(document).ready(function(){
-	//$("#homepage").animate({left: "25vw", opacity: '.1'});
-	//alert("hello");
 	$("#takemeback").click(function(){
 		$(document).scrollTop(0);
 	});
 });
-/*$(window).scroll(function() {
-	if($(document).scrollTop() == 0)
+$(window).scroll(function() {
+});
+
+setInterval(function() {
+	if($(document).scrollTop() > 100 && !hasOpened)
 	{
-				
+		openTrigger = true;
+		hasOpened = true;
 	}
-	if($(document).scrollTop() > (750))
+	if(openTrigger)
 	{
-				//$("#gifs").animate({left: "45vw", opacity: '.1'});
+		$("#desc").toggleClass("animate");
+		openTrigger = false;
 	}
-	if($(document).scrollTop() > (750*2))
-	{
-				//$("#brands").animate({left: "25vw", opacity: '.1'});
-	}
-});*/
+}, 100);
