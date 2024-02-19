@@ -2,6 +2,7 @@
 /* CSS Document */
 
 html, body {
+	overflow-x: initial !important;
 	margin: 0;
 	//background-color: #F4F4F8;
 	background-color: #FED766;
