@@ -1,143 +1,9 @@
 <!doctype html>
 <html>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#homepage").animate({left: "25vw", opacity: '.1'});
-		});
-		$(window).scroll(function() {
-			if($(document).scrollTop() == 0)
-			{
-  				
-			}
-			if($(document).scrollTop() > (750))
-			{
-  				$("#gifs").animate({left: "45vw", opacity: '.1'});
-			}
-			if($(document).scrollTop() > (750*2))
-			{
-  				$("#brands").animate({left: "25vw", opacity: '.1'});
-			}
-		});
-		$("#takemeback").click(function(){
-			$(document).scrollTop(0);
-		});
-	</script>
-	<style>
-		html, body {
-			margin: 0;
-			background-color: #F4F4F8;
-			width: 100vw;
-			scroll-behavior: smooth;
-			overflow-x: hidden;
-		}
-		section {
-			margin: -36px;
-		}
-		.main_bg {
-			background-color: #FED766;
-			//position:absolute;
-			height: 100vh;
-			width: 100vw;
-			animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
-  			animation-duration: 1s; /* don't forget to set a duration! */
-			z-index: -5;
-		}
-		h1 {
-			font-family: 'BioRhyme', serif;
-			font-size: 74px;
-			position: absolute;
-			left: 791px;
-			top: 173px;
-			
-			animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-  			animation-duration: 2s; /* don't forget to set a duration! */
-		}
-		#title {
-			font-size: 72px;
-			font-weight: normal;
-		}
-		#video_container {
-			position: absolute;
-			left: 5vw;
-			top: 5vw;
-			z-index: 2;
-			//display: none;
-			//box-shadow: 25px 25px 0px 0px #2AB7CA;
-		}
-		.intro_text {
-			position: absolute;
-			top: 15vh;
-			width: 400px;
-			left: 70vw;
-		}
-		#intro_text2 {
-			position: absolute;
-			text-align: right;
-			left: 75vw;
-			top: 75vh;
-			z-index: 5;
-		}
-		a:hover {
-			color: black;
-		}
-		p, a {
-			font-size: 36px;
-		}
-		a {
-			color: #F4F4F8;
-		}
-		ul
-		{
-			position: absolute;
-			//display: block;
-			z-index: 2;
-			list-style-type: none;
-		}
-		li a, .navitem {
-			color: #000000;
-			font-family: 'DM Serif Display', serif;
-			font-size: 32px;
-			padding-right: 32px;
-			//background-color: #E6E6EA;
-			opacity: 0%;
-			user-select: none;
-		}
-		li a:hover, .navitem:hover {
-			width:1005px;
-			//background-color: #2AB7CA;
-			color: #FE4A49;
-			animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  			animation-duration: 2s;
-		}
-		#intro_text2 {
-			font-family: 'DM Serif Display', serif;
-		}
-		.footertext {
-			text-align: left;
-			position: absolute;
-			z-index: 1;	
-			font-family: 'BioRhyme', serif;
-			font-size: 455px;
-			user-select: none;
-			opacity: 0%;
-		}
-		#takemeback {
-			position: absolute;
-			left:50vw;
-			user-select: none;
-			cursor: pointer;
-		}
-		.row {
-			display: flex;
-			flex-wrap: wrap;
-			padding: 0 4px;
-			margin: 100px;
-			margin-left:200px;
-			align-content: center;
-		}
-		
-	</style>
+	<!--<link rel="stylesheet" href="style.css">-->
+	<link rel="stylesheet" href="newstyle.css">
+	<script src="page.js"></script>
 <head>
 	
 <meta charset="utf-8">
@@ -147,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&family=Crimson+Text:ital@1&family=DM+Serif+Display&family=Kalnia&display=swap" rel="stylesheet">
 	
-<title>Untitled Document</title>
+<title>Cuchulahn O'Byrne - Motion Design</title>
 </head>
 
 <body>
@@ -159,44 +25,39 @@
 		<a class="navitem" href="#">About</a>
 	</ul>-->
 </header>
-<section class="home-section">
+<div class="home-section"> 
   <div id="main">
 	<div id="video_container">
 		<iframe id="video" width="1120" height="630" src="https://www.youtube.com/embed/gPShak6N_S8?si=XUUiif1BQNZz75ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 	<div class="main_bg">
-		<div style="top:400px" class="footertext" id="homepage">home</div>
-		<div id="intro_text2"><a href="mailto:cuchulahn@gmail.com">cuchulahn@gmail.com</a></div>
+		<!--<div style="top:400px" class="footertext" id="homepage">home</div>-->
+		<div>
+			<h1>Hi there 👋</h1>
+			<div id="d">
+				<p>My name is Cuchulahn (coo-shoo-larn), and I am a purveyer of digital amusements. I focus on creating engaging animation with a lot of character. I've been doing this for a while now, having worked in 2D and 3D for a range of clients, from wellness to tech. This is my portfolio site. If you see anything you like, do get in touch at my email below.</p>
+			</div>
+		</div>
+		<div id="email"><a href="mailto:cuchulahn@gmail.com">cuchulahn@gmail.com</a></div>
 	</div>
   </div>
-</section>
-<section class="gifs-section">
+</div>
+<div class="gifs-section">
 	<div class="main_bg">
-		<p>hi hi hi</p>
-		<div style="top:1400px" class="footertext" id="gifs">gifs</div>
-		
+		<!--<div style="top:1400px" class="footertext" id="gifs">gifs</div>-->
 		<div class="row">
 			<div class="column">
-				<img src="gifs/SobellRhodes_Screens_Full.gif" width="400" height="225" alt=""/>
-				<img src="gifs/Comp_3.gif" width="400" height="225" alt=""/>
-				<img src="gifs/Comp_2.gif" width="225" height="225" alt=""/>
+				<!--<img src="gifs/SobellRhodes_Screens_Full.gif" width="400" height="225" alt=""/>-->
+				<img src="gifs/Comp_3.gif" width="400" height="225" alt=""></img>
+				<img src="gifs/Comp_2.gif" width="225" height="225" alt=""></img>
 				<img src="gifs/Comp_4.gif" width="400" height="225" alt=""/>
 				<img src="gifs/stomper.gif" width="225" height="225" alt=""/>
 				<img src="gifs/BLACK FRIDAY.gif" width="225" height="225" alt=""/>
 			</div>
 		</div>
-		
 		<h2 id="takemeback">⬆️</h2>
+		<h3 id="footer">(C) Cuchulahn O'Byrne, 2024. Made using Netlify, Github and Dreamweaver.</h3>
 	</div>
-</section>
-<section class="brands-section">
-	<div class="main_bg">
-		<p>hi hi hi</p>
-		<button>Click to fade out boxes</button>
-		<div style="top:2200px" class="footertext" id="brands">brands</div>
-	</div>
-</section>
-<footer>
-</footer>
+</div>
 </body>
 </html>

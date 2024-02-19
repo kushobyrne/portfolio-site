@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin: 0;
+	//background-color: #F4F4F8;
+	background-color: #FED766;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	/*flex-wrap: wrap;
+	align-content: center;
+	display: grid;*/
+	max-height: 1300px;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	width:100%;
+	height: auto;
+}
+.main_bg {
+	z-index: -5;
+}
+.gifs-section {
+}
+h3 {
+	font-family: 'BioRhyme', serif;
+	
+	margin: auto;
+	text-align: center;
+	width: 50%;
+	opacity: .3;
+	padding: 10px;
+}
+h1 {
+	font-family: 'BioRhyme', serif;
+	text-align: center;
+	width: 50%;
+	opacity: 1;
+	padding: 10px;
+	text-decoration-line: underline;
+}
+#d {
+	width: 50%;
+	margin-left: 25vw;
+}
+p {
+	font-size: 18px;
+	font-family: 'DM Serif Display', serif;
+}
+#video_container {
+	margin-top: 25px;
+}
+#email {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	z-index: 5;
+	font-family: 'DM Serif Display', serif;
+}
+a:hover {
+	color: black;
+}
+a {
+	color: #F4F4F8;
+	font-size: 24px;
+}
+#takemeback {
+	margin-top: 25px;
+	user-select: none;
+	cursor: pointer;
+}
+img:hover {
+	transform: scale(1.2, 1.2);
+}
+img:hover > .overlaytext{
+	visibility: visible;
+}
+#footer {
+}
+#video {
+	width: 75%;
+}
+.home-section {
+	overflow: hidden;
+}
+
