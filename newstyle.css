@@ -89,9 +89,9 @@ a {
 	user-select: none;
 	cursor: pointer;
 }
-img:hover {
+/*img:hover {
 	transform: scale(1.2, 1.2);
-}
+}*/
 #footer {
 }
 .video {
