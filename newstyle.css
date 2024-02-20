@@ -27,17 +27,21 @@ body {
 	padding: 5px;
 }
 .gifs-section {
+	
+}
+.gifs-section.animate {
 }
 #desc {
 	background-color: #F4F4F8;
 	transform: scaleY(0);
 	transition: .65s ease-out;
+	margin-top: -300px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 #desc.animate {
 	transform: scaleY(1);
-	height: 100%;
+	margin-top: 0px;
 }
 h3 {
 	margin: auto;
@@ -77,8 +81,7 @@ p {
 	z-index: 5;
 }
 a:hover {
-	color: #F4F4F8;
-	
+	color: #007CBE;
 }
 a {
 	color: black;
