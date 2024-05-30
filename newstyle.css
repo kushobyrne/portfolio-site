@@ -2,16 +2,16 @@
 /* CSS Document */
 
 html, body {
-	//overflow-x: initial !important;
+	overflow-x: initial !important;
 	margin: 0;
 	//background-color: #F4F4F8;
 	background-color: #FED766;
 	scroll-behavior: smooth;
-	//overflow-x: hidden;
+	overflow-x: hidden;
 	/*flex-wrap: wrap;
 	align-content: center;
 	display: grid;*/
-	//max-height: 1300px;
+	max-height: 1300px;
 	align-content: center;
 	text-align: center;
 	justify-content: center;
@@ -104,5 +104,8 @@ a {
 	overflow: hidden;
 }
 img {
+	//height: 255px;
+}
+.gfx {
 	height: 255px;
 }

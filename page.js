@@ -2,7 +2,6 @@ var openTrigger = false;
 var hasOpened = false;
 
 $(document).ready(function(){
-	$(document).scrollTop(0);
 	$("#takemeback").click(function(){
 		$(document).scrollTop(0);
 	});
